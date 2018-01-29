@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: a0e3764da30035f46a39e20fae050498
+timeCreated: 1517122545
+licenseType: Free
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - moveMenu: {fileID: 1647720050765148, guid: b612ecfc7b2f5694694ea416caf5c872, type: 2}
+  - confirmMenu: {fileID: 1647720050765148, guid: b612ecfc7b2f5694694ea416caf5c872,
+      type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
