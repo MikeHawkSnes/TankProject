@@ -51,8 +51,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e3764da30035f46a39e20fae050498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveMenu: {fileID: 0}
-  confirmMenu: {fileID: 1953955071348764, guid: dabb00b87e3f614418fa5585e3892fef,
+  moveMenu: {fileID: 1046328122561628, guid: dabb00b87e3f614418fa5585e3892fef, type: 2}
+  confirmMenu: {fileID: 1352441602305202, guid: b8556c6ad8f17c8438bd30fe305bb398,
     type: 2}
-  moveMenuActive: 1
+  moveMenuActive: 0
   confirmMenuActive: 0
+  activeObject: {fileID: 0}

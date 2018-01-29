@@ -14,13 +14,16 @@ public class MenuManager : MonoBehaviour {
     private bool moveMenuActive = false;
     [SerializeField]
     private bool confirmMenuActive = false;
-
+    [SerializeField]
+    private GameObject activeObject;
 
     //instantiate menus
-    public void instanceMoveMenu()
+    public void instanceMoveMenu(GameObject objectReference)
     {
         moveMenuCanvas.enabled = true;
+        activeObject = objectReference;
         moveMenuActive = true;
+
     } 
     public void instanceConfirmMenu()
     {
@@ -31,6 +34,7 @@ public class MenuManager : MonoBehaviour {
     public void deactiveMoveMenu()
     {
         moveMenuCanvas.enabled = false;
+        activeObject = null;
         moveMenuActive = false;
     }
     public void deactiveConfirmMenu()
@@ -49,6 +53,10 @@ public class MenuManager : MonoBehaviour {
     {
         confirmMenuActive = status;
     }
+    public void setActiveObject(GameObject objectReference)
+    {
+        activeObject = objectReference;
+    }
     //getters
     public bool getMoveMenuStatus()
     {
@@ -57,6 +65,10 @@ public class MenuManager : MonoBehaviour {
     public bool getconfirmMenuStatus()
     {
         return confirmMenuActive;
+    }
+    public GameObject getActiveObject()
+    {
+        return activeObject;
     }
 
     private void Start()

@@ -45,9 +45,7 @@ public class ShotVector : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             shotQuaternion = playerShotAngle(lineVector.GetPosition(0), lineVector.GetPosition(1));
-            Debug.Log(shotQuaternion);
             lineVector.positionCount = 0;
-            //Instantiate(bulletShot, Player.transform.position, shotQuaternion);
             selectShoot = false;
         }
     }

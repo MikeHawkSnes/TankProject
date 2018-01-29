@@ -11,7 +11,7 @@ public class TankObjectManager : MonoBehaviour {
     {
         if (!Menu.getMoveMenuStatus())
         {
-            Menu.instanceMoveMenu();
+            Menu.instanceMoveMenu(this.gameObject);
         }
 
         
