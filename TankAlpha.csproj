@@ -285,7 +285,8 @@
     <Compile Include="Assets\Scripts\BulletMovement.cs" />
     <Compile Include="Assets\Scripts\MenuManager.cs" />
     <Compile Include="Assets\Scripts\MoveController.cs" />
-    <Compile Include="Assets\Scripts\old scripts\MovePath.cs" />
+    <Compile Include="Assets\Scripts\movementLineMaker.cs" />
+    <Compile Include="Assets\Scripts\MovePath.cs" />
     <Compile Include="Assets\Scripts\old scripts\PlayerControls.cs" />
     <Compile Include="Assets\Scripts\old scripts\PlayerMoveProto.cs" />
     <Compile Include="Assets\Scripts\old scripts\ShotVector.cs" />

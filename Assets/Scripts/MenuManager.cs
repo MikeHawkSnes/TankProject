@@ -17,6 +17,10 @@ public class MenuManager : MonoBehaviour {
     [SerializeField]
     private GameObject activeObject;
 
+    movementLineMaker movementLine;
+    [SerializeField]
+    private GameObject masterLineRender;
+
     //instantiate menus
     public void instanceMoveMenu(GameObject objectReference)
     {
@@ -71,11 +75,18 @@ public class MenuManager : MonoBehaviour {
         return activeObject;
     }
 
+
+    public void createMovementLine()
+    {
+        movementLine.moveAction(activeObject);
+    }
+
+
     private void Start()
     {
         moveMenuCanvas = moveMenu.GetComponent<Canvas>();
         confirmMenuCanvas = confirmMenu.GetComponent<Canvas>();
-
+        movementLine = masterLineRender.GetComponent<movementLineMaker>();
         confirmMenuCanvas.enabled = false;
         moveMenuCanvas.enabled = false;
     }
