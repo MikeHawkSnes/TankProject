@@ -30,6 +30,7 @@ public class movementLineMaker : MonoBehaviour
             //that happens is everything is set back to 0
             lineVector.positionCount = 0;
             wayPoints.RemoveRange(0, wayPoints.Count);
+
         }
         //once the mouse button is released the line gets simplified
         if (Input.GetMouseButtonUp(0))
@@ -41,6 +42,7 @@ public class movementLineMaker : MonoBehaviour
             {
                 wayPoints.Add(lineVector.GetPosition(i));
             }
+            createLine = false;
         }
         //while the mouse buttton is pressed we take input form the mouse position
         if (mouseIsPressed)
@@ -72,13 +74,16 @@ public class movementLineMaker : MonoBehaviour
             }
         }
     }
+    public void flushLineMaker()
+    {
+        lineVector.positionCount = 0;
+    }
 
 
     public void moveAction(GameObject playerRef)
     {
-        playerTransform = playerRef.GetComponent<Transform>();
+        playerTransform = playerRef.GetComponent<Transform>();//this function takes the playerRef parameter and uses it to make a reference to the object's transform for the initial point of the line
         createLine = true;
-        Debug.Log(playerRef);
     }
 
 

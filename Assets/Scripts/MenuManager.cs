@@ -35,10 +35,15 @@ public class MenuManager : MonoBehaviour {
         confirmMenuActive = true;
     }
     //destroy menus
-    public void deactiveMoveMenu()
+    public void cancelMoveMenu()
     {
         moveMenuCanvas.enabled = false;
         activeObject = null;
+        moveMenuActive = false;
+    }
+    public void deactiveMoveMenu()
+    {
+        moveMenuCanvas.enabled = false;
         moveMenuActive = false;
     }
     public void deactiveConfirmMenu()
@@ -79,6 +84,14 @@ public class MenuManager : MonoBehaviour {
     public void createMovementLine()
     {
         movementLine.moveAction(activeObject);
+        deactiveMoveMenu();
+        instanceConfirmMenu();
+    }
+    public void createShootLine()
+    {
+
+        deactiveMoveMenu();
+        instanceConfirmMenu();
     }
 
 

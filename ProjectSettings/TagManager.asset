@@ -19,7 +19,7 @@ TagManager:
   - 
   - Ground
   - Player
-  - 
+  - Line Renderer
   - 
   - 
   - 
@@ -42,6 +42,9 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Line Renderer
+    uniqueID: 2771494863
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
